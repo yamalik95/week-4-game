@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Star Wars Game</title>
+	<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+<body>
+
+	<div id = "gameContainer">
+
+		<div id = "headerContainer">
+			<div id = "headerTitleContainer">
+				<div id = "titleMargin"></div>
+				<div id = "headerTitleText">The Divine War</div>
+			</div>
+		</div>
+
+		<div id = "avatarContainer">
+
+			<div id = "hedonistContainer" value = "hedonist" class = "avatar">
+				<div class="avatarTitleContainer">
+					<div class = "avatarTitleMargin"></div>
+					<div class="avatarTitleText">Hedonist</div>
+				</div>
+				<img src="./assets/images/hedonist.jpg" class = "avatarPic">
+				<div class="health">Pleasure is God!<br/>Health: 100</div>
+			</div>
+			<div id = "asceticContainer" value = "ascetic" class = "avatar">
+				<div class="avatarTitleContainer">
+					<div class = "avatarTitleMargin"></div>
+					<div class="avatarTitleText">Ascetic</div>
+				</div>
+				<img src="./assets/images/ascetic.jpg" class = "avatarPic">
+				<div class="health">Renunciation is God!<br/>Health: 130</div>
+			</div>
+			<div id = "philosopherContainer" value = "philosopher" class = "avatar">
+				<div class="avatarTitleContainer">
+					<div class = "avatarTitleMargin"></div>
+					<div class="avatarTitleText">Philosopher</div>
+				</div>
+				<img src="./assets/images/philosopher.jpg" class = "avatarPic">
+				<div class="health">Contemplation is God!<br/>Health: 150</div>
+			</div>
+			<div id = "skepticContainer" value = "skeptic" class = "avatar">
+				<div class="avatarTitleContainer">
+					<div class = "avatarTitleMargin"></div>
+					<div class="avatarTitleText">Nihilist</div>
+				</div>
+				<img src="./assets/images/nihilist.jpg" class = "avatarPic">
+				<div class="health">There is no God!<br/>Health: 80</div>
+			</div>
+			<div id = "artistContainer" value = "artist" class = "avatar">
+				<div class="avatarTitleContainer">
+					<div class = "avatarTitleMargin"></div>
+					<div class="avatarTitleText">Artist</div>
+				</div>
+				<img src="./assets/images/artist.JPG" class = "avatarPic">
+				<div class="health">Creativity is God!<br/>Health: 170</div>
+			</div>
+			<div id = "messiahContainer" value = "messiah" class = "avatar">
+				<div class="avatarTitleContainer">
+					<div class = "avatarTitleMargin"></div>
+					<div class="avatarTitleText">Messiah</div>
+				</div>
+				<img src="./assets/images/messiah.jpg" class = "avatarPic">
+				<div class="health">'I' am God!<br/>Health: 200</div>
+			</div>
+
+		</div>
+
+		<div class = "gameInstruction">Your Character:</div>
+		<div id = "chosenAvatarContainer" class="">
+		</div>
+		<div class = "gameInstruction">Available Attacks:</div>
+		<input type = "button" id = "safeAttack" value = "Safe">
+		<input type = "button" id = "riskyAttack" value = "Risky">
+		<input type = "button" id = "insaneButton" value = "Insane">
+		<div class = "gameInstruction">Defender:</div>
+
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="./assets/javascript/game.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+#gameContainer {
+	position: absolute;
+	background-image: url("../images/background.jpg");
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+}
+
+#headerContainer {
+	height: 70px;
+	width: 100%;
+}
+
+#headerTitleContainer {
+	height: 70px;
+	width: 300px;
+	margin-left: 55%;
+}
+
+#headerTitleText {
+	height: 30px;
+	width: 100%;
+	font-size: 35px;
+	text-align: center;
+	font-weight: bold;
+	color: #0108bf;
+}
+
+#titleMargin {
+	height: 20px;
+}
+
+#avatarContainer {
+	height: 163px;
+	width: 100%;
+	margin-left: 45px;
+}
+
+.avatar {
+	height: 155px;
+	width: 170px;
+	border: 4px solid #C37A49;
+	background-color: white;
+}
+
+#hedonistContainer {
+	float: left;
+	border-right: 3px solid #C37A49;
+}
+
+#asceticContainer {
+	float: left;
+	border-left: 3px solid #C37A49;
+	border-right: 3px solid #C37A49;
+}
+
+#philosopherContainer {
+	float: left;
+	border-left: 3px solid #C37A49;
+	border-right: 3px solid #C37A49;
+}
+
+#skepticContainer {
+	float: left;
+	border-left: 3px solid #C37A49;
+	border-right: 3px solid #C37A49;
+}
+
+#artistContainer {
+	float: left;
+	border-left: 3px solid #C37A49;
+	border-right: 3px solid #C37A49;
+}
+
+#messiahContainer {
+	float: left;
+	border-left: 3px solid #C37A49;
+}
+
+.avatarPic {
+	display: block;
+	margin: auto;
+	height: 90px;
+	width: 140px;
+}
+
+.avatarTitleContainer {
+	height: 25px;
+	width: 170px;
+}
+
+.avatarTitleText {
+	height: 15px;
+	width: 170px;
+	text-align: center;
+}
+
+.avatarTitleMargin {
+	height: 5px;
+	width: 170px;
+}
+
+.health {
+	height: 15px;
+	width: 170px;
+	text-align: center;
+	margin-top: 5px;
+}
+
+.gameInstruction {
+	height: 40px;
+	width: 100%;
+	margin-left: 45px;
+	font-size: 40px;
+	font-weight: bolder;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	color: #0108bf;
+}
+
+#chosenAvatarContainer {
+	height: 163px;
+	width: 100%;
+	margin-left: 45px;
+}
+
+input {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 45px;
+}
