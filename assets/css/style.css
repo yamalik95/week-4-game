@@ -1,9 +1,19 @@
 #gameContainer {
-	position: absolute;
-	background-image: url("../images/background.jpg");
 	height: 100%;
 	width: 100%;
-	background-size: cover;
+}
+
+#gameContainer::after {
+  content: "";
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
 }
 
 #headerContainer {
@@ -21,60 +31,54 @@
 	height: 30px;
 	width: 100%;
 	font-size: 35px;
-	text-align: center;
 	font-weight: bold;
-	color: #0108bf;
+	color: #0074D9;
+	font-family: Impact;
 }
 
 #titleMargin {
-	height: 20px;
+	height: 10px;
 }
 
 #avatarContainer {
 	height: 163px;
-	width: 100%;
-	margin-left: 45px;
+	width: 680px;
+	margin-left: 10px;
+	margin-top: -60px;
 }
 
 .avatar {
 	height: 155px;
 	width: 170px;
-	border: 4px solid #C37A49;
+	border: 4px solid #0074D9;
+	border-radius: 20px;
 	background-color: white;
+	margin-left: 40px;
+	margin-top: 10px;
 }
 
 #hedonistContainer {
 	float: left;
-	border-right: 3px solid #C37A49;
 }
 
 #asceticContainer {
 	float: left;
-	border-left: 3px solid #C37A49;
-	border-right: 3px solid #C37A49;
 }
 
 #philosopherContainer {
 	float: left;
-	border-left: 3px solid #C37A49;
-	border-right: 3px solid #C37A49;
 }
 
-#skepticContainer {
+#nihilistContainer {
 	float: left;
-	border-left: 3px solid #C37A49;
-	border-right: 3px solid #C37A49;
 }
 
 #artistContainer {
 	float: left;
-	border-left: 3px solid #C37A49;
-	border-right: 3px solid #C37A49;
 }
 
 #messiahContainer {
 	float: left;
-	border-left: 3px solid #C37A49;
 }
 
 .avatarPic {
@@ -93,6 +97,7 @@
 	height: 15px;
 	width: 170px;
 	text-align: center;
+	font-family: Impact;
 }
 
 .avatarTitleMargin {
@@ -104,24 +109,30 @@
 	height: 15px;
 	width: 170px;
 	text-align: center;
-	margin-top: 5px;
+	margin-top: 12px;
+	font-family: Impact;
+	font-size: 17px;
 }
 
 .gameInstruction {
 	height: 40px;
-	width: 100%;
-	margin-left: 45px;
+	width: 300px;
+	margin-left: 55%;
 	font-size: 40px;
-	font-weight: bolder;
 	margin-top: 15px;
 	margin-bottom: 5px;
-	color: #0108bf;
+	color: #0074D9;
+	font-family: Impact;
+}
+
+#adversaryText {
+	color: #FD443E;
+	margin-top: 30px;
 }
 
 #chosenAvatarContainer {
 	height: 163px;
 	width: 100%;
-	margin-left: 45px;
 }
 
 input {
@@ -134,4 +145,170 @@ input {
     display: inline-block;
     font-size: 16px;
     margin-left: 45px;
+}
+
+input:focus {
+	outline: 0;
+}
+
+input:hover {
+	color: #FD443E;
+}
+
+#safeAttack {
+	margin-left: 55%
+}
+
+#gameGuide {
+	position: absolute;
+	height: 140px;
+	width: 450px;
+	margin-left: 55%;
+	font-size: 19px;
+	font-weight: lighter;
+	font-family: Impact;
+	color: #01203E;
+	margin-top: -27px;
+}
+
+#gameCommentary {
+	position: absolute;
+	height: 400px;
+	width: 500px;
+	margin-left: 50px;
+	margin-top: -200px;
+}
+
+.statsContainer {
+	height: 200px;
+	width: 500px;
+	text-align: center;
+	font-size: 40px;
+	color: #0074D9;
+	font-family: Impact;
+}
+
+.statsTitle {
+	height: 40px;
+	width: 500px;
+}
+
+#userHealth {
+	height: 20px;
+	width: 500px;
+	margin-top: 10px;
+	text-align: center;
+	font-size: 25px;
+}
+
+#adversaryHealth {
+	height: 20px;
+	width: 500px;
+	text-align: center;
+	font-size: 25px;
+	margin-top: 10px;
+	color: #FD443E;
+}
+
+#userAttack {
+	height: 20px;
+	width: 500px;
+	margin-top: 40px;
+	text-align: center;
+	font-size: 25px;
+}
+
+#adversaryAttack {
+	height: 20px;
+	width: 500px;
+	text-align: center;
+	font-size: 25px;
+	margin-top: 40px;
+	color: #FD443E;
+}
+
+#userHealthStat {
+	height: 30px;
+	width: 500px;
+	text-align: center;
+	font-size: 30px;
+}
+
+#userAttackStat {
+	height: 30px;
+	width: 500px;
+	text-align: center;
+	font-size: 30px;
+}
+
+#adversaryHealthStat {
+	height: 30px;
+	width: 500px;
+	color: #FD443E;
+	text-align: center;
+	font-size: 30px;
+}
+
+#adversaryAttackStat {
+	height: 30px;
+	width: 500px;
+	color: #FD443E;
+	text-align: center;
+	font-size: 30px;
+}
+
+#userOutcomeContainer {
+	position: absolute;
+	height: 150px;
+	width: 250px;
+	margin-top: 165px;
+	margin-left: 75%;
+	display: block;
+}
+
+#adversaryOutcomeContainer {
+	position: absolute;
+	height: 150px;
+	width: 250px;
+	margin-top: 510px;
+	margin-left: 75%;
+	display: block;
+}
+
+#userOutcomeTitle {
+	margin-top: 30px;
+	height: 30px;
+	width: 250px;
+	font-size: 20px;
+	font-family: Impact;
+	color: #0074D9;
+}
+
+#adversaryOutcomeTitle {
+	margin-top: 30px;
+	height: 30px;
+	width: 250px;
+	font-size: 20px;
+	font-family: Impact;
+	color: #FD443E;
+}
+
+#userOutcome {
+	height: 30px;
+	width: 250px;
+	font-size: 30px;
+	font-family: Impact;
+	text-align: center;
+	margin-left: -30px;
+	color: #0074D9;
+}
+
+#adversaryOutcome {
+	height: 30px;
+	width: 250px;
+	font-size: 30px;
+	font-family: Impact;
+	text-align: center;
+	margin-left: -30px;
+	color: #FD443E;
 }

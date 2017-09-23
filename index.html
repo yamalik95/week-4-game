@@ -16,67 +16,109 @@
 			</div>
 		</div>
 
+		<div id = "gameGuide">User first selects preferred prophet, then battles infidel prophets. Safe is guaranteed damage 
+		to infidel. Risky is equal probability of no damage or twice the 'safe' damage to infidel. Insane is equal 
+		probability of either self-harm or infidel damage with 4x 'safe' damage. Each attack
+		boosts 'safe' damage value. Lower base health means higher 'safe' damage and increment.
+		</div>
+		
+		<div id = "userOutcomeContainer">
+			<div id = "userOutcomeTitle">Previous Attack Outcome:</div>
+			<div id = "userOutcome">None</div>
+		</div>
+		<div id = "adversaryOutcomeContainer">
+			<div id = "adversaryOutcomeTitle">Previous Attack Outcome:</div>
+			<div id = "adversaryOutcome">None</div>
+		</div>
+
 		<div id = "avatarContainer">
 
-			<div id = "hedonistContainer" value = "hedonist" class = "avatar">
+			<div id = "hedonistContainer" value = "1000 40 5.5 hedonist" class = "avatar">
 				<div class="avatarTitleContainer">
 					<div class = "avatarTitleMargin"></div>
 					<div class="avatarTitleText">Hedonist</div>
 				</div>
 				<img src="./assets/images/hedonist.jpg" class = "avatarPic">
-				<div class="health">Pleasure is God!<br/>Health: 100</div>
+				<div class="health">Pleasure is God!</div>
 			</div>
-			<div id = "asceticContainer" value = "ascetic" class = "avatar">
+			<div id = "asceticContainer" value = "1500 27 3 ascetic" class = "avatar">
 				<div class="avatarTitleContainer">
 					<div class = "avatarTitleMargin"></div>
 					<div class="avatarTitleText">Ascetic</div>
 				</div>
 				<img src="./assets/images/ascetic.jpg" class = "avatarPic">
-				<div class="health">Renunciation is God!<br/>Health: 130</div>
+				<div class="health">Renunciation is God!</div>
 			</div>
-			<div id = "philosopherContainer" value = "philosopher" class = "avatar">
+			<div id = "philosopherContainer" value = "2250 18 1.5 philosopher" class = "avatar">
 				<div class="avatarTitleContainer">
 					<div class = "avatarTitleMargin"></div>
 					<div class="avatarTitleText">Philosopher</div>
 				</div>
 				<img src="./assets/images/philosopher.jpg" class = "avatarPic">
-				<div class="health">Contemplation is God!<br/>Health: 150</div>
+				<div class="health">Contemplation is God!</div>
 			</div>
-			<div id = "skepticContainer" value = "skeptic" class = "avatar">
+			<div id = "nihilistContainer" value = "666 60 8.5 nihilist" class = "avatar">
 				<div class="avatarTitleContainer">
 					<div class = "avatarTitleMargin"></div>
 					<div class="avatarTitleText">Nihilist</div>
 				</div>
 				<img src="./assets/images/nihilist.jpg" class = "avatarPic">
-				<div class="health">There is no God!<br/>Health: 80</div>
+				<div class="health">There is no God!</div>
 			</div>
-			<div id = "artistContainer" value = "artist" class = "avatar">
+			<div id = "artistContainer" value = "3375 12 .6 artist" class = "avatar">
 				<div class="avatarTitleContainer">
 					<div class = "avatarTitleMargin"></div>
 					<div class="avatarTitleText">Artist</div>
 				</div>
 				<img src="./assets/images/artist.JPG" class = "avatarPic">
-				<div class="health">Creativity is God!<br/>Health: 170</div>
+				<div class="health">Creativity is God!</div>
 			</div>
-			<div id = "messiahContainer" value = "messiah" class = "avatar">
+			<div id = "messiahContainer" value = "5062 8 .3 messiah" class = "avatar">
 				<div class="avatarTitleContainer">
 					<div class = "avatarTitleMargin"></div>
 					<div class="avatarTitleText">Messiah</div>
 				</div>
 				<img src="./assets/images/messiah.jpg" class = "avatarPic">
-				<div class="health">'I' am God!<br/>Health: 200</div>
+				<div class="health">'I' am God!</div>
 			</div>
 
 		</div>
 
-		<div class = "gameInstruction">Your Character:</div>
-		<div id = "chosenAvatarContainer" class="">
-		</div>
-		<div class = "gameInstruction">Available Attacks:</div>
+		<div class = "gameInstruction">True Prophet:</div>
+		<div id = "chosenAvatarContainer"></div>
+		<div class = "gameInstruction">Attacks:</div>
 		<input type = "button" id = "safeAttack" value = "Safe">
 		<input type = "button" id = "riskyAttack" value = "Risky">
 		<input type = "button" id = "insaneButton" value = "Insane">
-		<div class = "gameInstruction">Defender:</div>
+		<div class = "gameInstruction" id = "adversaryText">Infidel Prophet:</div>
+		
+		<div id = "gameCommentary">
+			<div class = "statsContainer">
+				<div class = "statsTitle">User Stats:</div>
+				<div id = "userHealth">
+					Health:
+					<div id="userHealthStat"></div>
+				</div>
+				<div id = "userAttack">
+					Safe Attack:
+					<div id="userAttackStat"></div>
+				</div>
+			</div>
+			<div class = "statsContainer">
+				<div class = "statsTitle" style = "color: #FD443E;">Infidel Stats:</div>
+				<div id = "adversaryHealth">
+					Health:
+					<div id="adversaryHealthStat"></div>
+				</div>
+				<div id = "adversaryAttack">
+					Safe Attack:
+					<div id="adversaryAttackStat"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class = "adversaryAvatarContainer"></div>
+
 
 	</div>
 	
