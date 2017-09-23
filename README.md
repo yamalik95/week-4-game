@@ -1,2 +1,2 @@
 # week-4-game
-Star Wars RPG, very basic
+RPG with a spiritual twist
